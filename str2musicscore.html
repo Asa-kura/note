@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="CSS/base-style.css">
     <link rel="stylesheet" href="CSS/piano.css">
     <link rel="stylesheet" href="CSS/str-editor.css">
-    <script type="text/javascript" src="JavaScript/piano.js"></script>
+
 </head>
 
 <body>
@@ -420,29 +420,31 @@
     <div class="ruler-window">
 
     </div>
-    <div class="method-bts">
-        <span class="note-db"></span>
-        <span class="note-hf"></span>
-        <span class="note-dot"></span>
-        <span class="note-del"></span>
-        <span class="all-del"></span>
+    <div class="method-bts clearfix">
+        <span class="note-db bt1" onclick="alterNote('add')">+</span>
+        <span class="note-hf bt2" onclick="alterNote('minus')">-</span>
+        <span class="note-dot bt3" onclick="alterNote('dot')">.</span>
+        <span class="note-del bt4" onclick="delNote()">&lt;</span>
+        <span class="all-del bt5" onclick="cleanNote()">←</span>
     </div>
 
     <div class="editor-window">
         <div class="container clearfix">
             <h2>音符可视化</h2>
+            <ul class="note-container" id="notes"></ul>
 
         </div>
         <form action="#" method="POST" class="form-str">
             <h2>上传字符串</h2>
             <textarea class="str-area" name="str-container" id="str-container" class="strarea" disabled></textarea>
-            <input type="submit" class="submmit-button">
+            <input type="submit" class="submmit-button" value="提 交">
         </form>
     </div>
     <footer>
         2020-5-23 by <a href="">Asakura</a>
     </footer>
 </body>
+<script type="text/javascript" src="JavaScript/piano.js"></script>
 
 
 </html>

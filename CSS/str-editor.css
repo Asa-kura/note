@@ -1,3 +1,7 @@
+* {
+    user-select: none;
+    transition: background-color 0.5s,width 0.5s;
+}
 .piano-window {
     width: 1300px;
     height: 300px;
@@ -28,36 +32,48 @@ footer {
     border-radius: 10px;
     background-color: rgba(255,255,255,0.5);
     margin: 15px auto;
+    box-sizing: boder-box;
+    padding: 10px;
+
 }
 .form-str {
     position: relative;
     width: 1170px;
-    height: 337px;
+    height: 460px;
     border-radius: 10px;
     background-color: rgba(255,255,255,0.5);
     margin: 15px auto;
+    box-sizing: boder-box;
+    padding: 10px;
 }
 
 .str-area {
     position: absolute;
     width: 1150px;
     left: 10px;
-    height: 250px;
+    height: 350px;
     margin-right: 0;
     resize: none;
     border-radius: 10px;
+    box-sizing: boder-box;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    
 }
 .submmit-button{
     position: absolute;
     bottom: 0;
     right: 0;
-    width: 10%;
+    width: 12%;
+    height: 37px;
     margin: 10px;
     background-color: rgba(255, 255, 255, 0.7);
     border: pink solid 1px;
     border-radius: 5px;
     text-align: center;
     line-height: 25px;
+    font-size: 20px;
 }
 .clean-button{
     position: absolute;
@@ -93,15 +109,86 @@ footer {
 
 }
 .method-bts span {
-    margin-top: 10px;
-    display: inline-block;
+    position: absolute;
     text-align: center;
-    line-height: 25px;
+    line-height: 24px;
     border-radius: 5px;
-    width: 25px;
-    height: 25px;
+    width: 24px;
+    height: 24px;
+    left: 5px;
     background-color: #fff;
+    margin-top: -12px;
+    cursor: pointer;
 }
-h2 {
-    margin: 10px;
+.bt1{
+    top: 10%;
+}
+.bt2{
+    top: 30%;
+}
+.bt3{
+    top: 50%;
+}
+.bt4{
+    top: 70%;
+}
+.bt5{
+    top: 90%;
+}
+h2{
+    margin-bottom: 10px;
+}
+.note {
+    position: relative;
+    float: left;
+    height: 20px;
+    width: 108px;
+    background-color: pink;
+    border-radius: 10px;
+    margin: 3px 3px;
+    text-align: center;
+    line-height: 20px;
+    cursor: pointer;
+}
+.note::after{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background-color: rgba(255,255,255);
+    opacity: 0;
+    z-index: 1;
+    border-radius: 10px;
+    content: '';
+    transition: all 0.4s;
+}
+.note:hover::after {
+    top: -4px;
+    left: -10%;
+    height: 28px;
+    width: 120%;
+    opacity: 0.5;
+}
+.current-note {
+    background-color: green;
+}
+
+.note4 {
+    width: 222px;
+}
+.note5 {
+    width: 336px;
+}
+.note6 {
+    width: 450px;
+}
+.note2 {
+    width: 51px;
+}
+.note1 {
+    width: 22px;
+}
+.note-dot{
+    width: 165px;
 }

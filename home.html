@@ -7,10 +7,29 @@
     <title>听音撰谱功能实现主页</title>
     <link rel="stylesheet" href="CSS/base-style.css">
     <link rel="stylesheet" href="CSS/homepage.css">
+    <script src="./JavaScript/home.js"></script>
 </head>
 
 <body>
     <header id="header">
+        <a href="./home.html"><span class="home-label current-lable">听音撰谱主页</span></a>
+        <div class="lable-contaner clearfix">
+            <a href="./metronome.html">
+                <li class="label lab1">网页节拍器
+            </a></li></a>
+            <a href="./wavescope.html">
+                <li class="label lab2">在线音波图展示</li>
+            </a>
+            <a href="./str2musicscore.html">
+                <li class="label lab3">字符串生成乐谱</li>
+            </a>
+            <a href="./file2musicscore.html">
+                <li class="label lab4">音频文件生成乐谱</li>
+            </a>
+            <a href="./pianoOnLine.html">
+                <li class="label lab5">HTML5网页钢琴</li>
+            </a>
+        </div>
 
     </header>
     <nav class="clearfix">
@@ -20,18 +39,19 @@
             <li><a href="#demo2" title="跳转到功能二介绍">在线音波图展示</a></li>
             <li><a href="#demo3" title="跳转到功能三介绍">字符串生成乐谱</a></li>
             <li><a href="#demo4" title="跳转到功能四介绍">音频文件生成乐谱</a></li>
-            <li><a href="#demo5" title="跳转到功能五介绍">网页钢琴</a></li>
+            <li><a href="#demo5" title="跳转到功能五介绍">HTML5网页钢琴</a></li>
         </ul>
         <div class="img-nav">
-            <span class="prev">&lt;</span>
-            <span class="next">&gt;</span>
+            <span class="prev" id="prev">&lt;</span>
+            <span class="next" id="next">&gt;</span>
             <span class="ball-nav">
-                <span class="current"></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
+                <span id="1" class="ball current"></span>
+                <span id="2" class="ball"></span>
+                <span id="3" class="ball"></span>
+                <span id="4" class="ball"></span>
+                <span id="5" class="ball"></span>
             </span>
+            <img style="width: 100%; transition: all 0.5s;" src="./templates/img/预览1.png" alt="" id="img">
         </div>
 
     </nav>
@@ -57,7 +77,7 @@
     </div>
     <a href="#header" title="回到顶部"><span class="return-top"></span></a>
     <footer>
-        2020-5-23 by <a href="">Asakura</a>
+        2020-06-02 by <a href="https://github.com/Asa-kura/note">Asakura</a>
     </footer>
 
 </body>

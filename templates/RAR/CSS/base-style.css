@@ -1,0 +1,124 @@
+* {/*去除内外边距*/
+    margin: 0;
+    padding: 0;
+}
+
+em,
+i {/*字体不倾斜*/
+    font-size: none;
+}
+
+li {/*去除小圆点*/
+    list-style: none;
+}
+
+img {/*去除低版本浏览器下链接图片的边框*/
+    border: 0;
+    /*取消图片底部空白空隙*/
+    vertical-align: middle
+}
+
+button {/*鼠标经过时，鼠标样式变化*/
+    cursor: pointer;
+}
+
+a {
+    color: rgb(49, 49, 49);
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+a:hover {
+    color: #1631c8;
+}
+
+botton,
+input {
+    font-family: "Microsoft Yahei";
+}
+
+body {
+    /*抗锯齿*/
+    -webkit-font-smoothing: antialiased;
+    background-color: #fff;
+    font: 12px/1.5 "Microsoft Yahei"；
+}
+
+.hide,
+.none {
+    display: none;
+}
+
+/*清除浮动*/
+.clearfix:after {
+    visibility:hidden;
+    clear: both;
+    display: block;
+    content: ".";
+    height: 0;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+body {
+    background: rgba(255,255,255,0.3) url(../templates/img/bg_headphone.jpg) no-repeat center fixed;
+    background-size:cover;
+}
+header {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    position: sticky;
+    background-color: skyblue;
+    top: 0px;
+    z-index: 1;
+    opacity: 0.8;
+}
+.home-label {
+    float: left;
+    width: 200px;    
+    text-align: center;
+    line-height: 50px;
+    border-bottom-right-radius: 50px;
+    font-size: 25px;
+    font-weight: 700;
+    cursor: pointer;
+    background-color: rgb(68, 190, 238);
+    font-family: "华文行楷";
+}
+.lable-contaner{
+    position: absolute;
+    width: 1000px;
+    left: 50%;
+    margin-left: -500px;
+    
+
+
+}
+.label {
+    /* float: right; */
+    float: left;
+    width: 160px;    
+    height: 50px;
+    text-align: center;
+    line-height: 40px;
+    margin-left: 50px;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    cursor: pointer;
+    transition: all 0.5s;
+    font-weight: 700;
+    font-size: 17px;
+}
+.label:hover{
+    background-color: rgb(106, 196, 128);
+}
+.lab1 {
+    margin-left: 0;
+}
+.current-lable {
+    background-color: rgb(106, 196, 128);
+    line-height: 50px;
+    
+}

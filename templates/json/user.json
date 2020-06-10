@@ -1,0 +1,16 @@
+cbUser({
+    "musicscore": [
+        {
+            "score_name": "xxx",
+            "wav_url": "xxx"
+        },
+        {
+            "score_name": "xxx",
+            "wav_url": "xxx"
+        },
+        {
+            "score_name": "xxx",
+            "wav_url": "xxx"
+        }
+    ]
+})

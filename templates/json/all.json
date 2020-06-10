@@ -1,0 +1,16 @@
+cbAll({
+    "musicscore": [
+        {
+            "score_name": "yyy",
+            "wav_url": "yyy"
+        },
+        {
+            "score_name": "yyy",
+            "wav_url": "yyy"
+        },
+        {
+            "score_name": "yyy",
+            "wav_url": "yyy"
+        }
+    ]
+})

@@ -34,8 +34,8 @@
         <a href="./pianoOnLine.html" style="float: right;"><span>username</span></a>
     </header>
     <div class="file-load-area" id="area">
-        <form action="123456879" method="POST">
-            <input type="file" id="file" accept=".wav">
+        <form enctype="multipart/form-data" action="/Myapp_dealfile/uploadfile/" method="POST">
+            <input type="file" id="file" name="my_file" accept=".wav">
             <span id="filebtn">上传WAV文件</span>
             <input type="submit" class="submmit-button" value="提 交">
             <span class="lable">将要上传的文件</span>
